@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "create_additionalweapons",
+  "id": "additionalweapons",
   "version": "${version}",
   "name": "Create: Additional Weapons",
   "description": "Adds some additional weapons to create",
@@ -12,15 +12,15 @@
     "issues": "https://github.com/GlennJoakimB/Create_AdditionalWeapons/issues"
   },
   "license": "CC0",
-  "icon": "assets/create_additionalweapons/icon.png",
+  "icon": "assets/additionalweapons/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ridopipolop.create_additionalweapons.ExampleMod"
+      "ridopipolop.additionalweapons.ExampleMod"
     ]
   },
   "mixins": [
-    "create_additionalweapons.mixins.json"
+    "additionalweapons.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",

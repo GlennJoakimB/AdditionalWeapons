@@ -1,6 +1,6 @@
-package ridopipolop.create_additionalweapons.mixin;
+package ridopipolop.additionalweapons.mixin;
 
-import ridopipolop.create_additionalweapons.ExampleMod;
+import ridopipolop.additionalweapons.ExampleMod;
 
 import net.minecraft.client.Minecraft;
 

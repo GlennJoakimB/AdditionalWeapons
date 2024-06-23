@@ -1,4 +1,4 @@
-package ridopipolop.create_additionalweapons;
+package ridopipolop.additionalweapons;
 
 import com.simibubi.create.Create;
 
