@@ -1,25 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "create_additionalweapons",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Create: Additional Weapons",
+  "description": "Adds some additional weapons to create",
   "authors": [
-    "Me!"
+    "GlennJoakimB"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/GlennJoakimB/Create_AdditionalWeapons",
+    "issues": "https://github.com/GlennJoakimB/Create_AdditionalWeapons/issues"
   },
   "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/create_additionalweapons/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.modid.ExampleMod"
+      "ridopipolop.create_additionalweapons.ExampleMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "create_additionalweapons.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
