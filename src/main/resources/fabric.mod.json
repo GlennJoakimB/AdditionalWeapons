@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
   "id": "additionalweapons",
-  "version": "${version}",
+  "version": "0.0.1",
   "name": "Create: Additional Weapons",
-  "description": "Adds some additional weapons to create",
+  "description": "This mod implements some additional weapons for fun",
   "authors": [
-    "GlennJoakimB"
+    "Ridopipolop"
   ],
   "contact": {
-    "sources": "https://github.com/GlennJoakimB/Create_AdditionalWeapons",
-    "issues": "https://github.com/GlennJoakimB/Create_AdditionalWeapons/issues"
+    "sources": "https://github.com/GlennJoakimB/AdditionalWeapons",
+    "issues": "https://github.com/GlennJoakimB/AdditionalWeapons/issues"
   },
-  "license": "CC0",
+  "license": "MIT",
   "icon": "assets/additionalweapons/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ridopipolop.additionalweapons.ExampleMod"
+      "com.ridopipolop.additionalweapons.AdditionalWeapons"
     ]
   },
   "mixins": [
     "additionalweapons.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${fabric_loader_version}",
-    "fabric-api": ">=${fabric_api_version}",
-    "create": "${create_version}",
-    "minecraft": "${minecraft_version}"
+    "fabricloader": ">=0.15.11",
+    "fabric-api": ">=0.92.2+1.20.1",
+    "create": "0.5.1-f-build.1417+mc1.20.1",
+    "minecraft": "1.20.1"
   }
 }
