@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MinecraftMixin {
 	@Inject(method = "init", at = @At("TAIL"))
 	private void exampleMixin(CallbackInfo ci) {
-		AdditionalWeapons.LOGGER.info("Hello from {}", AdditionalWeapons.NAME);
+		AdditionalWeapons.LOGGER.info("A quick hello from {}", AdditionalWeapons.NAME);
 	}
 }

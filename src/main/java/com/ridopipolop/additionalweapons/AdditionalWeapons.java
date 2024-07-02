@@ -8,7 +8,6 @@ import net.fabricmc.api.ModInitializer;
 import com.ridopipolop.additionalweapons.item.ModItems;
 
 import net.minecraft.resources.ResourceLocation;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +17,7 @@ public class AdditionalWeapons implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
   public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(AdditionalWeapons.MOD_ID);
 
+
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
@@ -25,8 +25,6 @@ public class AdditionalWeapons implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the client!",
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
-
-    
 
     // Initialize the mod classes here:
     ModItems.register();
