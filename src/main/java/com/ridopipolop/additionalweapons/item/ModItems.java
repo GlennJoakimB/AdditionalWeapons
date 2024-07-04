@@ -21,6 +21,10 @@ public class ModItems {
     .properties(p -> p.stacksTo(1))
     //.transform(CreateRegistrate.customRenderedItem(() -> WeaponItemRenderer::new)
     .register();
+  
+  public static final ItemEntry<Item> BROAD_GLAIVE = REGISTRATE.item("broad_glaive", Item::new)
+    .properties(p -> p.stacksTo(1))
+    .register();
 
   public static final ItemEntry<Item> RUBBER_DUCK = REGISTRATE.item("rubber_duck", Item::new)
     .properties(p -> p.stacksTo(16))
