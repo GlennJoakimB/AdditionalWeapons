@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored":"true",
+  "key": {
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "G": {
+      "item": "create:cogwheel"
+    },
+    "H": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    "BGB",
+    " H ",
+    " H "
+  ],
+  "result": {
+    "item": "additionalweapons:broad_glaive"
+  }
+}

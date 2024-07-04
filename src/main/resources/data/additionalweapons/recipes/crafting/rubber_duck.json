@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:orange_dye"
+    },
+    "S": {
+      "item": "minecraft:stone_button"
+    },
+    "G": {
+      "item": "create:golden_sheet"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    }
+  },
+  "pattern": [
+    "OS ",
+    "GNG",
+    "GGG"
+  ],
+  "result": {
+    "item": "additionalweapons:rubber_duck"
+  },
+  "show_notification": true
+}

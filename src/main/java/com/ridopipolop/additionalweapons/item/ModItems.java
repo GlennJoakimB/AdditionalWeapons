@@ -27,7 +27,7 @@ public class ModItems {
     .register();
 
   public static final ItemEntry<Item> RUBBER_DUCK = REGISTRATE.item("rubber_duck", Item::new)
-    .properties(p -> p.stacksTo(16))
+    .properties(p -> p.stacksTo(64))
     .register();
   
   

@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored":"true",
+  "key": {
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "G": {
+      "item": "create:cogwheel"
+    },
+    "H": {
+      "item": "minecraft:stick"
+    },
+    "L": {
+      "item": "minecraft:lever"
+    }
+  },
+  "pattern": [
+    "I  ",
+    "IPG",
+    "IBL",
+    " H "
+  ],
+  "result": {
+    "item": "additionalweapons:impact_axe"
+  }
+}
