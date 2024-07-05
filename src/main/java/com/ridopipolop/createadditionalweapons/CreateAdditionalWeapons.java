@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
 
-// import com.ridopipolop.createadditionalweapons.item.ModItemGroups;
+import com.ridopipolop.createadditionalweapons.item.ModCreativeTab;
 import com.ridopipolop.createadditionalweapons.item.ModItems;
 
 import net.minecraft.resources.ResourceLocation;
@@ -17,7 +17,7 @@ public class CreateAdditionalWeapons implements ModInitializer {
 	public static final String MOD_ID = "createadditionalweapons";
 	public static final String NAME = "Create: Additional Weapons";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-  public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(CreateAdditionalWeapons.MOD_ID);
+  public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MOD_ID);
 
 
 	@Override
@@ -29,8 +29,8 @@ public class CreateAdditionalWeapons implements ModInitializer {
 		), NAME);
 
     // Initialize the mod classes here:
-    // ModItemGroups.registerItemGroups();
     ModItems.register();
+    ModCreativeTab.registerItemGroups();
 
     // fabric exclusive, squeeze this in here to register before stuff is used
     REGISTRATE.register();

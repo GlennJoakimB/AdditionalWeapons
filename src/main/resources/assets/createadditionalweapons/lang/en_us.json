@@ -1,5 +1,6 @@
 {
   "item.createadditionalweapons.broad_glaive":"Broad Glaive",
   "item.createadditionalweapons.impact_axe":"Impact Axe",
-  "item.createadditionalweapons.rubber_duck":"Rubber Duck"
+  "item.createadditionalweapons.rubber_duck":"Rubber Duck",
+  "itemGroup.createadditionalweapons.main":"Create: Additional Weapons"
 }

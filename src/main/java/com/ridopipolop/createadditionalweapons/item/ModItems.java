@@ -3,18 +3,10 @@ package com.ridopipolop.createadditionalweapons.item;
 import static com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons.REGISTRATE;
 
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
-// import com.simibubi.create.AllCreativeModeTabs;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.Item;
 
-
 public class ModItems {
-
-  // Adds the items to the Create tab.
-  // Doesn't work at the moment
-  // static {
-  //   REGISTRATE.setCreativeTab(AllCreativeModeTabs.BASE_CREATIVE_TAB.key());
-  // }
 
   // Define items
   public static final ItemEntry<Item> IMPACT_AXE = REGISTRATE
