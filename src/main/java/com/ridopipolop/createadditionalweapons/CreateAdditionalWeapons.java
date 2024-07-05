@@ -6,7 +6,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
 
-import com.ridopipolop.createadditionalweapons.item.ModItemGroups;
+// import com.ridopipolop.createadditionalweapons.item.ModItemGroups;
 import com.ridopipolop.createadditionalweapons.item.ModItems;
 
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +29,7 @@ public class CreateAdditionalWeapons implements ModInitializer {
 		), NAME);
 
     // Initialize the mod classes here:
-    ModItemGroups.registerItemGroups();
+    // ModItemGroups.registerItemGroups();
     ModItems.register();
 
     // fabric exclusive, squeeze this in here to register before stuff is used
