@@ -2,9 +2,6 @@
   "type": "create:mechanical_crafting",
   "acceptMirrored":"true",
   "key": {
-    "P": {
-      "item": "create:precision_mechanism"
-    },
     "B": {
       "item": "create:brass_sheet"
     },
@@ -16,18 +13,16 @@
     },
     "H": {
       "item": "minecraft:stick"
-    },
-    "L": {
-      "item": "minecraft:lever"
     }
   },
   "pattern": [
-    "I  ",
-    "IPG",
-    "IBL",
+    " I ",
+    " I ",
+    "BGB",
+    " H ",
     " H "
   ],
   "result": {
-    "item": "additionalweapons:impact_axe"
+    "item": "createadditionalweapons:broad_glaive"
   }
 }

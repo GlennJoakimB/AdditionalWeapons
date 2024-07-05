@@ -12,8 +12,8 @@ Adds some new weapons with special abilities and functions.
 - Impact Axe
   - An axe that delivers heavier blows, or heavy knockback depending on mode
 
-- Spear
-  - Extended reach for attacking enemies further than regular swords or tools can.
+- Broad Glaive
+  - Extended reach for attacking enemies
 
 
 ## License

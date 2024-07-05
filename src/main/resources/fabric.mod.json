@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "additionalweapons",
-  "version": "0.0.1",
+  "id": "createadditionalweapons",
+  "version": "0.0.1-1.20.1",
   "name": "Create: Additional Weapons",
   "description": "This mod implements some additional weapons for fun",
   "authors": [
     "Ridopipolop"
   ],
   "contact": {
-    "sources": "https://github.com/GlennJoakimB/AdditionalWeapons",
-    "issues": "https://github.com/GlennJoakimB/AdditionalWeapons/issues"
+    "sources": "https://github.com/GlennJoakimB/CreateAdditionalWeapons",
+    "issues": "https://github.com/GlennJoakimB/CreateAdditionalWeapons/issues"
   },
   "license": "MIT",
-  "icon": "assets/additionalweapons/icon.png",
+  "icon": "assets/createadditionalweapons/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.ridopipolop.additionalweapons.AdditionalWeapons"
+      "com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons"
     ]
   },
   "mixins": [
-    "additionalweapons.mixins.json"
+    "createadditionalweapons.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.15.11",

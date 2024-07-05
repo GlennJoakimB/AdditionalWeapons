@@ -21,7 +21,7 @@
     "GGG"
   ],
   "result": {
-    "item": "additionalweapons:rubber_duck"
+    "item": "createadditionalweapons:rubber_duck"
   },
   "show_notification": true
 }

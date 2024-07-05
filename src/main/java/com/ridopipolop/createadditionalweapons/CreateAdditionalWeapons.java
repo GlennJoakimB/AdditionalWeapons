@@ -1,21 +1,23 @@
-package com.ridopipolop.additionalweapons;
+package com.ridopipolop.createadditionalweapons;
 
 import com.simibubi.create.Create;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.fabricmc.api.ModInitializer;
-import com.ridopipolop.additionalweapons.item.ModItems;
+
+import com.ridopipolop.createadditionalweapons.item.ModItemGroups;
+import com.ridopipolop.createadditionalweapons.item.ModItems;
 
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AdditionalWeapons implements ModInitializer {
-	public static final String MOD_ID = "additionalweapons";
+public class CreateAdditionalWeapons implements ModInitializer {
+	public static final String MOD_ID = "createadditionalweapons";
 	public static final String NAME = "Create: Additional Weapons";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
-  public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(AdditionalWeapons.MOD_ID);
+  public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(CreateAdditionalWeapons.MOD_ID);
 
 
 	@Override
@@ -27,6 +29,7 @@ public class AdditionalWeapons implements ModInitializer {
 		), NAME);
 
     // Initialize the mod classes here:
+    ModItemGroups.registerItemGroups();
     ModItems.register();
 
     // fabric exclusive, squeeze this in here to register before stuff is used

@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.ridopipolop.additionalweapons.mixin",
+  "package": "com.ridopipolop.createadditionalweapons.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],

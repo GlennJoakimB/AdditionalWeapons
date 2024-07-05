@@ -1,6 +1,6 @@
-package com.ridopipolop.additionalweapons.mixin;
+package com.ridopipolop.createadditionalweapons.mixin;
 
-import com.ridopipolop.additionalweapons.AdditionalWeapons;
+import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
 
 import net.minecraft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,6 +12,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MinecraftMixin {
 	@Inject(method = "init", at = @At("TAIL"))
 	private void exampleMixin(CallbackInfo ci) {
-		AdditionalWeapons.LOGGER.info("A quick hello from {}", AdditionalWeapons.NAME);
+		CreateAdditionalWeapons.LOGGER.info("A quick hello from {}", CreateAdditionalWeapons.NAME);
 	}
 }

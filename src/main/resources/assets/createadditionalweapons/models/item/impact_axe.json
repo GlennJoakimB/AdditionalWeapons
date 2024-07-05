@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "additionalweapons:item/broad_glaive"
+    "layer0": "createadditionalweapons:item/impact_axe"
   }
 }
