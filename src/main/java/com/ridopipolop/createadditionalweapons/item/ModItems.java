@@ -3,6 +3,7 @@ package com.ridopipolop.createadditionalweapons.item;
 import static com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons.REGISTRATE;
 
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
+import com.ridopipolop.createadditionalweapons.content.weapons.BroadGlaiveItem;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.Item;
 
@@ -15,8 +16,8 @@ public class ModItems {
     //.transform(CreateRegistrate.customRenderedItem(() -> WeaponItemRenderer::new)
     .register();
   
-  public static final ItemEntry<Item> BROAD_GLAIVE = REGISTRATE
-    .item("broad_glaive", Item::new)
+  public static final ItemEntry<BroadGlaiveItem> BROAD_GLAIVE = REGISTRATE
+    .item("broad_glaive", BroadGlaiveItem::new)
     .properties(p -> p.stacksTo(1))
     .register();
 
