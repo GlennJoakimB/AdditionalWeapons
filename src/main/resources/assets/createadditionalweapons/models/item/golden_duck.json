@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "createadditionalweapons:item/rubber_duck"
+    "layer0": "createadditionalweapons:item/golden_duck"
   }
 }

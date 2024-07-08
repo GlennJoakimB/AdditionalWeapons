@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "O": {
-      "item": "minecraft:orange_dye"
+    "A": {
+      "item": "minecraft:acacia_slab"
     },
     "S": {
       "item": "minecraft:stone_button"
@@ -16,12 +16,12 @@
     }
   },
   "pattern": [
-    "OS ",
+    "AS ",
     "GNG",
     "GGG"
   ],
   "result": {
-    "item": "createadditionalweapons:rubber_duck"
+    "item": "createadditionalweapons:golden_duck"
   },
   "show_notification": true
 }

@@ -18,7 +18,7 @@ public class ModCreativeTab {
   
   public static final ResourceKey<CreativeModeTab> MAIN_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, CreateAdditionalWeapons.id("main"));
   public static final CreativeModeTab MAIN_TAB = FabricItemGroup.builder()
-    .icon(() -> new ItemStack(ModItems.RUBBER_DUCK))
+    .icon(() -> new ItemStack(ModItems.GOLDEN_DUCK))
     .title(Components.translatable("itemGroup.createadditionalweapons.main"))
     .build();
     
