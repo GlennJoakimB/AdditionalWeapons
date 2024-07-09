@@ -11,6 +11,7 @@ import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import com.ridopipolop.createadditionalweapons.item.ModItems;
 
+import io.github.fabricators_of_create.porting_lib.entity.events.LivingEntityEvents.LivingTickEvent;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.TridentItem;
 import net.minecraft.world.entity.Entity;
@@ -38,7 +39,8 @@ public class BroadGlaiveItem extends TridentItem {
   }
 
   // --- Attribute-logic ---
-  public static void holdingGlaiveIncreasesRange(LivingEntity entity) {
+  public static void holdingGlaiveIncreasesRange(LivingTickEvent ent) {
+    LivingEntity entity = ent.getEntity();
     if (!(entity instanceof Player))
       return;
 
@@ -66,7 +68,4 @@ public class BroadGlaiveItem extends TridentItem {
     if (persistentData.contains(GLAIVE_MARKER))
       player.getAttributes().addTransientAttributeModifiers(rangeModifier.get());
   }
-
-  
-
 }
