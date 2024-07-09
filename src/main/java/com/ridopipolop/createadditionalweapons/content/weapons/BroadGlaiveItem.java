@@ -28,7 +28,6 @@ public class BroadGlaiveItem extends TridentItem {
 
   private static final Supplier<Multimap<Attribute, AttributeModifier>> rangeModifier = Suppliers
       .memoize(() -> ImmutableMultimap.of(
-          ReachEntityAttributes.REACH, rangeAttributeModifier,
           ReachEntityAttributes.ATTACK_RANGE, rangeAttributeModifier));
 
   public static final String GLAIVE_MARKER = "moddedBroadGlaive";
