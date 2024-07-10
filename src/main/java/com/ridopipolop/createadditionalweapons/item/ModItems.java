@@ -4,6 +4,9 @@ import static com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons.RE
 
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
 import com.ridopipolop.createadditionalweapons.content.weapons.BroadGlaiveItem;
+import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.BroadGlaiveItemRenderer;
+import com.simibubi.create.foundation.data.AssetLookup;
+import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.item.Item;
 
@@ -19,6 +22,8 @@ public class ModItems {
   public static final ItemEntry<BroadGlaiveItem> BROAD_GLAIVE = REGISTRATE
     .item("broad_glaive", BroadGlaiveItem::new)
     .properties(p -> p.stacksTo(1))
+    .transform(CreateRegistrate.customRenderedItem(() -> BroadGlaiveItemRenderer::new))
+    .model(AssetLookup.itemModelWithPartials())
     .register();
 
   public static final ItemEntry<Item> GOLDEN_DUCK = REGISTRATE

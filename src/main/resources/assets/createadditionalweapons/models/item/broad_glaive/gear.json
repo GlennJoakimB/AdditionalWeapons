@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"parent": "createadditionalweapons:item/broad_glaive/item",
+	"textures": {
+		"0": "createadditionalweapons:item/broad_glaive",
+		"particle": "createadditionalweapons:item/broad_glaive"
+	},
+	"elements": [
+		{
+			"name": "Cog",
+			"from": [6, 11, 7.5],
+			"to": [10, 12, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"south": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Cog",
+			"from": [6, 11, 7.5],
+			"to": [10, 12, 8.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"south": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Cog",
+			"from": [7.5, 11, 6],
+			"to": [8.5, 12, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 12, 2, 13], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"west": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Cog",
+			"from": [7.5, 11, 6],
+			"to": [8.5, 12, 10],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8]},
+			"faces": {
+				"north": {"uv": [1, 12, 2, 13], "rotation": 90, "texture": "#0"},
+				"east": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [1, 12, 2, 13], "texture": "#0"},
+				"west": {"uv": [1, 9, 2, 13], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [1, 9, 2, 13], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [1, 9, 2, 13], "texture": "#0"}
+			}
+		}
+	]
+}
