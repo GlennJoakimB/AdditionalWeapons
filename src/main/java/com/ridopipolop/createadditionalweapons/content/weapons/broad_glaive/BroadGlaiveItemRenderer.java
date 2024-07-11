@@ -15,18 +15,15 @@ import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 
 public class BroadGlaiveItemRenderer extends CustomRenderedItemModelRenderer {
-  
+
   protected static final PartialModel GEAR = new PartialModel(CreateAdditionalWeapons.id("item/broad_glaive/gear"));
 
   @Override
-  protected void render(ItemStack stack, CustomRenderedItemModel model, PartialItemModelRenderer renderer, ItemDisplayContext transformType, PoseStack ms, MultiBufferSource buffer, int light, int overlay) {
+  protected void render(ItemStack stack, CustomRenderedItemModel model, PartialItemModelRenderer renderer,
+      ItemDisplayContext transformType, PoseStack ms, MultiBufferSource buffer, int light, int overlay) {
+
     renderer.render(model.getOriginalModel(), light);
-
-    float xOffset = -1/16f;
-		ms.translate(-xOffset, 0, 0);
-		ms.mulPose(Axis.YP.rotationDegrees(ScrollValueHandler.getScroll(AnimationTickHolder.getPartialTicks())));
-		ms.translate(xOffset, 0, 0);
-
+    ms.mulPose(Axis.YP.rotationDegrees(ScrollValueHandler.getScroll(AnimationTickHolder.getPartialTicks())));
     renderer.render(GEAR.get(), light);
   }
 }

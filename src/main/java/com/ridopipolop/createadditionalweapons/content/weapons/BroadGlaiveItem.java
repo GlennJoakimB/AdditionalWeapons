@@ -24,7 +24,7 @@ public class BroadGlaiveItem extends TridentItem {
 
   // Added custom UUID, hope it works
   public static final AttributeModifier rangeAttributeModifier = new AttributeModifier(
-      UUID.fromString("ffe07123-760f-4174-9340-cf290be36139"), "Range modifier", 1,
+      UUID.fromString("ffe07123-760f-4174-9340-cf290be36139"), "Range modifier", 1.2,
       AttributeModifier.Operation.ADDITION);
 
   private static final Supplier<Multimap<Attribute, AttributeModifier>> rangeModifier = Suppliers

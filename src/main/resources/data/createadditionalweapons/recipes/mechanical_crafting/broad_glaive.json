@@ -5,8 +5,8 @@
     "B": {
       "item": "create:brass_sheet"
     },
-    "I": {
-      "item": "create:iron_sheet"
+    "S": {
+      "item": "create:sturdy_sheet"
     },
     "G": {
       "item": "create:cogwheel"
@@ -16,8 +16,8 @@
     }
   },
   "pattern": [
-    " I ",
-    " I ",
+    " S ",
+    " S ",
     "BGB",
     " H ",
     " H "

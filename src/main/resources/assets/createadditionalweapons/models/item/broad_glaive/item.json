@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"parent": "block/block",
+  "texture_size": [32, 32],
 	"textures": {
 		"0": "createadditionalweapons:item/broad_glaive",
 		"particle": "createadditionalweapons:item/broad_glaive"
@@ -9,9 +9,9 @@
 	"elements": [
 		{
 			"name": "Blade",
-			"from": [7.75574, 13, 6.47985],
-			"to": [8.25574, 22.5, 9.47985],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6.25, 8]},
+			"from": [7.75, 13, 6.5],
+			"to": [8.25, 22.5, 9.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 17.75, 8]},
 			"faces": {
 				"north": {"uv": [2, 6.5, 2.5, 16], "texture": "#0"},
 				"east": {"uv": [5.5, 6.5, 2.5, 16], "texture": "#0"},
@@ -22,9 +22,9 @@
 		},
 		{
 			"name": "BladeBracket",
-			"from": [7.25574, 13, 7.22985],
-			"to": [8.75574, 15.5, 8.72985],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 5.75, 8]},
+			"from": [7.25, 13, 7.25],
+			"to": [8.75, 15.5, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 14.25, 8]},
 			"faces": {
 				"north": {"uv": [4.5, 0, 2, 1.5], "rotation": 90, "texture": "#0"},
 				"east": {"uv": [4.5, 1.5, 2, 3], "rotation": 90, "texture": "#0"},
@@ -35,9 +35,9 @@
 		},
 		{
 			"name": "gear case top",
-			"from": [7, 12, 6.12985],
-			"to": [9, 13, 9.62985],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.5, 7.87985]},
+			"from": [7, 12, 6.25],
+			"to": [9, 13, 9.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 12.5, 8]},
 			"faces": {
 				"north": {"uv": [4.5, 0, 6.5, 1], "texture": "#0"},
 				"east": {"uv": [4.5, 0, 5.5, 3.5], "rotation": 90, "texture": "#0"},
@@ -49,9 +49,9 @@
 		},
 		{
 			"name": "UpperHandleBracket",
-			"from": [7.27522, 10, 6.73551],
-			"to": [9.27522, 11, 8.73551],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8]},
+			"from": [7.35, 10, 6.75],
+			"to": [9.35, 11, 8.75],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8.1]},
 			"faces": {
 				"north": {"uv": [4.5, 2, 6.5, 3], "texture": "#0"},
 				"east": {"uv": [4.5, 2, 6.5, 3], "texture": "#0"},
@@ -63,9 +63,9 @@
 		},
 		{
 			"name": "HandleBracket",
-			"from": [7.27522, 3, 6.73551],
-			"to": [9.27522, 4, 8.73551],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8]},
+			"from": [7.35, 3, 6.75],
+			"to": [9.35, 4, 8.75],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8.1]},
 			"faces": {
 				"north": {"uv": [4.5, 2, 6.5, 3], "texture": "#0"},
 				"east": {"uv": [4.5, 2, 6.5, 3], "texture": "#0"},
@@ -77,9 +77,9 @@
 		},
 		{
 			"name": "SideHandle",
-			"from": [8.34099, 4, 6.92494],
-			"to": [9.09099, 10, 7.67494],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 6.25, 8]},
+			"from": [8.1, 4, 6.2],
+			"to": [8.85, 10, 6.95],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8.6, 7, 7.3]},
 			"faces": {
 				"north": {"uv": [1, 0, 2, 8], "texture": "#0"},
 				"east": {"uv": [1, 1, 2, 9], "texture": "#0"},
@@ -89,9 +89,9 @@
 		},
 		{
 			"name": "Handle",
-			"from": [7.50574, -6, 7.47985],
-			"to": [8.50574, 10, 8.47985],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6.25, 8]},
+			"from": [7.5, -6, 7.5],
+			"to": [8.5, 10, 8.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 2, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 1, 16], "texture": "#0"},
 				"east": {"uv": [0, 0, 1, 16], "texture": "#0"},
