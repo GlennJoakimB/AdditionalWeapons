@@ -1,6 +1,6 @@
 package com.ridopipolop.createadditionalweapons.events;
 
-import com.ridopipolop.createadditionalweapons.content.weapons.BroadGlaiveItem;
+import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.BroadGlaiveItem;
 
 import io.github.fabricators_of_create.porting_lib.entity.events.EntityDataEvents;
 import io.github.fabricators_of_create.porting_lib.entity.events.LivingEntityEvents.LivingTickEvent;

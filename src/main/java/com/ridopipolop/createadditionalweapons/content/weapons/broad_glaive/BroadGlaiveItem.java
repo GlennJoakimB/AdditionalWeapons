@@ -1,4 +1,4 @@
-package com.ridopipolop.createadditionalweapons.content.weapons;
+package com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive;
 
 import java.util.UUID;
 import java.util.function.Supplier;

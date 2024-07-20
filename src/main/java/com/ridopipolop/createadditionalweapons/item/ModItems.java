@@ -3,7 +3,8 @@ package com.ridopipolop.createadditionalweapons.item;
 import static com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons.REGISTRATE;
 
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
-import com.ridopipolop.createadditionalweapons.content.weapons.BroadGlaiveItem;
+import com.ridopipolop.createadditionalweapons.content.weapons.ImpactAxeItem;
+import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.BroadGlaiveItem;
 import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.BroadGlaiveItemRenderer;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
@@ -13,8 +14,8 @@ import net.minecraft.world.item.Item;
 public class ModItems {
 
   // Define items
-  public static final ItemEntry<Item> IMPACT_AXE = REGISTRATE
-    .item("impact_axe", Item::new)
+  public static final ItemEntry<ImpactAxeItem> IMPACT_AXE = REGISTRATE
+    .item("impact_axe", ImpactAxeItem::new)
     .properties(p -> p.stacksTo(1))
     //.transform(CreateRegistrate.customRenderedItem(() -> WeaponItemRenderer::new)
     .register();
