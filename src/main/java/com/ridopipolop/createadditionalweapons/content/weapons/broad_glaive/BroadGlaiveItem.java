@@ -59,11 +59,6 @@ public class BroadGlaiveItem extends TridentItem {
         new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3.0, Operation.ADDITION));
   }
 
-  @Override
-  public int getUseDuration(ItemStack stack) {
-    return 35000;
-  }
-
   // --- Attribute-logic ---
   public static void holdingGlaiveIncreasesRange(LivingTickEvent ent) {
     LivingEntity entity = ent.getEntity();
@@ -98,16 +93,8 @@ public class BroadGlaiveItem extends TridentItem {
   // --- Trident-logic ---
   @Override
   public void releaseUsing(ItemStack stack, Level level, LivingEntity entityLiving, int timeCharged) {
-    CreateAdditionalWeapons.LOGGER.info("BroadGlaive was released.");
-
-    if (!(entityLiving instanceof Player player)) {
-      CreateAdditionalWeapons.LOGGER.info("BroadGlaive ended here for some reason");
+    if (!(entityLiving instanceof Player player))
       return;
-    }
-
-    // TODO: get this far.
-    // Problem: does not reach here.
-    CreateAdditionalWeapons.LOGGER.info("BroadGlaive was released!");
 
     int i = this.getUseDuration(stack) - timeCharged;
     if (i >= THROW_THRESHOLD_TIME) {
@@ -140,6 +127,10 @@ public class BroadGlaiveItem extends TridentItem {
     CreateAdditionalWeapons.LOGGER.info("BroadGlaive is being used!");
 
     ItemStack itemStack = player.getItemInHand(usedHand);
+
+    // The if-check was the problem!!!
+    //TODO: Implement better check?
+
     // if (itemStack.getDamageValue() >= itemStack.getMaxDamage() - 1) {
     // return InteractionResultHolder.fail(itemStack);
     // } else {
