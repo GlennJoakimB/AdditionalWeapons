@@ -10,6 +10,7 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import com.jamieswhiteshirt.reachentityattributes.ReachEntityAttributes;
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
+import com.ridopipolop.createadditionalweapons.entity.ThrownBroadGlaive;
 import com.ridopipolop.createadditionalweapons.item.ModItems;
 
 import io.github.fabricators_of_create.porting_lib.entity.events.LivingEntityEvents.LivingTickEvent;
@@ -100,15 +101,15 @@ public class BroadGlaiveItem extends TridentItem {
         stack.hurtAndBreak(1, player, (p) -> {
           p.broadcastBreakEvent(entityLiving.getUsedItemHand());
         });
-        ThrownTrident thrownTrident = new ThrownTrident(level, player, stack);
+        ThrownBroadGlaive thrownBroadGlaive = new ThrownBroadGlaive(level, player, stack);
 
-        thrownTrident.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, SHOOT_POWER, 1.0F);
+        thrownBroadGlaive.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, SHOOT_POWER, 1.0F);
         if (player.getAbilities().instabuild) {
-          thrownTrident.pickup = Pickup.CREATIVE_ONLY;
+          thrownBroadGlaive.pickup = Pickup.CREATIVE_ONLY;
         }
 
-        level.addFreshEntity(thrownTrident);
-        level.playSound((Player) null, thrownTrident, SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
+        level.addFreshEntity(thrownBroadGlaive);
+        level.playSound((Player) null, thrownBroadGlaive, SoundEvents.TRIDENT_THROW, SoundSource.PLAYERS, 1.0F, 1.0F);
         if (!player.getAbilities().instabuild) {
           player.getInventory().removeItem(stack);
         }
