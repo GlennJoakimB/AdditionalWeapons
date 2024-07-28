@@ -23,7 +23,7 @@ public class ModCreativeTab {
     .build();
     
   public static void registerItemGroups() {
-    CreateAdditionalWeapons.LOGGER.info("Registering Item Groups for [{}].", CreateAdditionalWeapons.NAME);
+    CreateAdditionalWeapons.LOGGER.info("Registering Item Groups for {}.", CreateAdditionalWeapons.NAME);
     Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MAIN_KEY, MAIN_TAB);
 
     ItemGroupEvents.modifyEntriesEvent(MAIN_KEY).register(content -> {

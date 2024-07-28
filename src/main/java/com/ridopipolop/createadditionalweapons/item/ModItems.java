@@ -34,6 +34,6 @@ public class ModItems {
   
   
   public static void register() {
-    CreateAdditionalWeapons.LOGGER.info("Registiring items for " + CreateAdditionalWeapons.NAME);
+    CreateAdditionalWeapons.LOGGER.info("Registiring items for {}.", CreateAdditionalWeapons.NAME);
   }
 }

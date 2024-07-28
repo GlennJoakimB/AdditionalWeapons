@@ -30,15 +30,15 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow.Pickup;
-import net.minecraft.world.entity.projectile.ThrownTrident;
 
 public class BroadGlaiveItem extends TridentItem {
   public static final int THROW_THRESHOLD_TIME = 10;
   public static final float RANGE_MODIFIER = 1.2F;
   public static final float BASE_DAMAGE = 4.0F;
+  public static final float BASE_ATTACK_SPEED = -3.0F;
   public static final float SHOOT_POWER = 2.5F;
 
-  // Added custom UUID, hope it works
+  public static final String GLAIVE_MARKER = "moddedBroadGlaive";
   public static final AttributeModifier rangeAttributeModifier = new AttributeModifier(
       UUID.fromString("ffe07123-760f-4174-9340-cf290be36139"), "Range modifier", RANGE_MODIFIER,
       AttributeModifier.Operation.ADDITION);
@@ -47,8 +47,6 @@ public class BroadGlaiveItem extends TridentItem {
       .memoize(() -> ImmutableMultimap.of(
           ReachEntityAttributes.ATTACK_RANGE, rangeAttributeModifier));
 
-  public static final String GLAIVE_MARKER = "moddedBroadGlaive";
-
   // Constructor
   public BroadGlaiveItem(Properties properties) {
     super(properties);
@@ -56,7 +54,7 @@ public class BroadGlaiveItem extends TridentItem {
     builder.put(Attributes.ATTACK_DAMAGE,
         new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", BASE_DAMAGE, Operation.ADDITION));
     builder.put(Attributes.ATTACK_SPEED,
-        new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3.0, Operation.ADDITION));
+        new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", BASE_ATTACK_SPEED, Operation.ADDITION));
   }
 
   // --- Attribute-logic ---
@@ -98,8 +96,6 @@ public class BroadGlaiveItem extends TridentItem {
 
     int i = this.getUseDuration(stack) - timeCharged;
     if (i >= THROW_THRESHOLD_TIME) {
-      CreateAdditionalWeapons.LOGGER.info("BroadGlaive was held for more than 10 ticks");
-
       if (!level.isClientSide) {
         stack.hurtAndBreak(1, player, (p) -> {
           p.broadcastBreakEvent(entityLiving.getUsedItemHand());
@@ -124,12 +120,10 @@ public class BroadGlaiveItem extends TridentItem {
 
   @Override
   public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand usedHand) {
-    CreateAdditionalWeapons.LOGGER.info("BroadGlaive is being used!");
-
     ItemStack itemStack = player.getItemInHand(usedHand);
 
     // The if-check was the problem!!!
-    //TODO: Implement better check?
+    // TODO: Implement better check?
 
     // if (itemStack.getDamageValue() >= itemStack.getMaxDamage() - 1) {
     // return InteractionResultHolder.fail(itemStack);
