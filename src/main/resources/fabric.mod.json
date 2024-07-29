@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons"
+    ],
+    "client": [
+      "com.ridopipolop.createadditionalweapons.client.CreateAdditionalWeaponsClient"
     ]
   },
   "mixins": [

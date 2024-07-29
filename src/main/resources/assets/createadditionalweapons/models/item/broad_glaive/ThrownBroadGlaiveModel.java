@@ -16,7 +16,7 @@ import net.minecraft.resources.ResourceLocation;
 // Made with Blockbench 4.10.4
 // Exported for Minecraft version 1.17+ for Yarn
 // Paste this class into your mod and generate all required imports
-public class ThrownBroadGlaiveModel extends Model {// EntityModel<Entity> {
+public class ThrownBroadGlaiveModel extends Model {// EntityModel<ThrownBroadGlaive> {
   // private final ModelPart Blade;
   // private final ModelPart Cog;
   // private final ModelPart Handle;
@@ -34,26 +34,31 @@ public class ThrownBroadGlaiveModel extends Model {// EntityModel<Entity> {
   public static LayerDefinition getTexturedModelData() {
     MeshDefinition meshDefinition = new MeshDefinition();
     PartDefinition modelPartData = meshDefinition.getRoot();
-    PartDefinition Blade = modelPartData.addOrReplaceChild("Blade", CubeListBuilder.create()
+    modelPartData.addOrReplaceChild("Blade", CubeListBuilder.create()
         .texOffs(4, 0).addBox(-0.75F, -5.5F, -1.25F, 0.5F, 9.5F, 3.0F)
         .texOffs(4, 13).addBox(-1.25F, 1.5F, -0.5F, 1.5F, 2.5F, 1.5F)
-        .texOffs(11, 5).addBox(-1.5F, 4.0F, -1.5F, 2.0F, 1.0F, 3.5F), PartPose.rotation(0.5F, 7.0F, -0.25F));
+        .texOffs(11, 5).addBox(-1.5F, 4.0F, -1.5F, 2.0F, 1.0F, 3.5F),
+        PartPose.rotation(0.5F, 7.0F, -0.25F));
 
-    PartDefinition Cog = modelPartData.addOrReplaceChild("Cog", CubeListBuilder.create()
-        .texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F), PartPose.rotation(0.0F, 12.5F, 0.0F));
-    PartDefinition Cog_r1 = Cog.addOrReplaceChild("Cog_r1", CubeListBuilder.create()
-        .texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F), PartPose.rotation(0.0F, 2.3562F, 0.0F));
-    PartDefinition Cog_r2 = Cog.addOrReplaceChild("Cog_r2", CubeListBuilder.create()
-        .texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F), PartPose.rotation(0.0F, 1.5708F, 0.0F));
-    PartDefinition Cog_r3 = Cog.addOrReplaceChild("Cog_r3", CubeListBuilder.create()
-        .texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F), PartPose.rotation(0.0F, 0.7854F, 0.0F));
+    PartDefinition Cog = modelPartData.addOrReplaceChild("Cog",
+        CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
+        PartPose.rotation(0.0F, 12.5F, 0.0F));
+    Cog.addOrReplaceChild("Cog_r1",
+        CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
+        PartPose.rotation(0.0F, 2.3562F, 0.0F));
+    Cog.addOrReplaceChild("Cog_r2",
+        CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
+        PartPose.rotation(0.0F, 1.5708F, 0.0F));
+    Cog.addOrReplaceChild("Cog_r3",
+        CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
+        PartPose.rotation(0.0F, 0.7854F, 0.0F));
 
     PartDefinition Handle = modelPartData.addOrReplaceChild("Handle", CubeListBuilder.create()
         .texOffs(0, 0).addBox(-0.5F, -10.0F, -0.5F, 1.0F, 16.0F, 1.0F), PartPose.rotation(0, 24.0F, 0));
-    PartDefinition SideHandle_r1 = Handle.addOrReplaceChild("SideHandle_r1", CubeListBuilder.create()
-        .texOffs(11, 10).addBox(-0.7F, -3.0F, -0.75F, 1.0F, 6.0F, 1.0F),
+    Handle.addOrReplaceChild("SideHandle_r1",
+        CubeListBuilder.create().texOffs(11, 10).addBox(-0.7F, -3.0F, -0.75F, 1.0F, 6.0F, 1.0F),
         PartPose.offsetAndRotation(-0.05F, -7.0F, -0.5F, 0.0F, -0.7854F, 0.0F));
-    PartDefinition HandleBracket_r1 = Handle.addOrReplaceChild("HandleBracket_r1", CubeListBuilder.create()
+    Handle.addOrReplaceChild("HandleBracket_r1", CubeListBuilder.create()
         .texOffs(8, 0).addBox(-1.35F, 2.25F, -1.35F, 2.0F, 1.0F, 2.0F)
         .texOffs(8, 0).addBox(-1.35F, -4.75F, -1.35F, 2.0F, 1.0F, 2.0F),
         PartPose.offsetAndRotation(0.0F, -6.25F, 0.1F, 0.0F, -0.7854F, 0.0F));
@@ -136,7 +141,6 @@ public class ThrownBroadGlaiveModel extends Model {// EntityModel<Entity> {
   // public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount,
   // float ageInTicks, float netHeadYaw,
   // float headPitch) {
-  // // TODO Auto-generated method stub
-  // throw new UnsupportedOperationException("Unimplemented method 'setupAnim'");
+  // // TODO: Add animation of gear?
   // }
 }

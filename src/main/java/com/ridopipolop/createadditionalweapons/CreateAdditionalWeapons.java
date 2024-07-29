@@ -8,6 +8,7 @@ import net.fabricmc.api.ModInitializer;
 
 import com.ridopipolop.createadditionalweapons.events.CommonEvents;
 import com.ridopipolop.createadditionalweapons.item.ModCreativeTab;
+import com.ridopipolop.createadditionalweapons.item.ModEntityTypes;
 import com.ridopipolop.createadditionalweapons.item.ModItems;
 
 import net.minecraft.resources.ResourceLocation;
@@ -32,6 +33,7 @@ public class CreateAdditionalWeapons implements ModInitializer {
     // Initialize the mod classes here:
     ModItems.register();
     ModCreativeTab.registerItemGroups();
+    ModEntityTypes.register();
 
     // fabric exclusive, squeeze this in here to register before stuff is used
     REGISTRATE.register();
