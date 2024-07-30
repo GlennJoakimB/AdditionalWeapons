@@ -32,14 +32,14 @@ public class ThrownBroadGlaiveModel extends Model {
     MeshDefinition meshDefinition = new MeshDefinition();
     PartDefinition modelPartData = meshDefinition.getRoot();
     modelPartData.addOrReplaceChild("Blade", CubeListBuilder.create()
-        .texOffs(4, 0).addBox(-0.75F, -5.5F, -1.25F, 0.5F, 9.5F, 3.0F)
-        .texOffs(4, 13).addBox(-1.25F, 1.5F, -0.5F, 1.5F, 2.5F, 1.5F)
-        .texOffs(11, 5).addBox(-1.5F, 4.0F, -1.5F, 2.0F, 1.0F, 3.5F),
-        PartPose.offset(0.5F, 7.0F, -0.25F));
+        .texOffs(4, 0).addBox(-0.25F, -7.5F, -1.5F, 0.5F, 9.5F, 3.0F)
+        .texOffs(4, 13).addBox(-0.75F, -0.5F, -0.75F, 1.5F, 2.5F, 1.5F)
+        .texOffs(11, 5).addBox(-1.0F, 2.0F, -1.75F, 2.0F, 1.0F, 3.5F),
+        PartPose.offsetAndRotation(0.0F, 4.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
 
     PartDefinition Cog = modelPartData.addOrReplaceChild("Cog",
         CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
-        PartPose.offset(0.0F, 12.5F, 0.0F));
+        PartPose.offset(0.0F, 7.5F, 0.0F));
     Cog.addOrReplaceChild("Cog_r1",
         CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
         PartPose.rotation(0.0F, 2.3562F, 0.0F));
@@ -50,8 +50,9 @@ public class ThrownBroadGlaiveModel extends Model {
         CubeListBuilder.create().texOffs(11, 3).addBox(-2.0F, -0.5F, -0.5F, 4.0F, 1.0F, 1.0F),
         PartPose.rotation(0.0F, 0.7854F, 0.0F));
 
-    PartDefinition Handle = modelPartData.addOrReplaceChild("Handle", CubeListBuilder.create()
-        .texOffs(0, 0).addBox(-0.5F, -10.0F, -0.5F, 1.0F, 16.0F, 1.0F), PartPose.offset(0.0F, 24.0F, 0.0F));
+    PartDefinition Handle = modelPartData.addOrReplaceChild("Handle",
+        CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, -10.0F, -0.5F, 1.0F, 16.0F, 1.0F),
+        PartPose.offsetAndRotation(0.0F, 19.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
     Handle.addOrReplaceChild("SideHandle_r1",
         CubeListBuilder.create().texOffs(11, 10).addBox(-0.7F, -3.0F, -0.75F, 1.0F, 6.0F, 1.0F),
         PartPose.offsetAndRotation(-0.05F, -7.0F, -0.5F, 0.0F, -0.7854F, 0.0F));
