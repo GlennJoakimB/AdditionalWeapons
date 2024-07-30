@@ -1,10 +1,10 @@
 package com.ridopipolop.createadditionalweapons.client;
 
 import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
+import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.ThrownBroadGlaiveModel;
 import com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive.ThrownBroadGlaiveRenderer;
 import com.ridopipolop.createadditionalweapons.item.ModEntityTypes;
 
-import assets.createadditionalweapons.models.item.broad_glaive.ThrownBroadGlaiveModel;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;

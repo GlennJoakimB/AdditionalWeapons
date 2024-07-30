@@ -43,7 +43,6 @@ public class ThrownBroadGlaive extends AbstractArrow {
   }
 
   public ThrownBroadGlaive(Level level, LivingEntity shooter, ItemStack stack) {
-    // super(EntityType.TRIDENT, shooter, level);
     super(ModEntityTypes.THROWN_BROAD_GLAIVE, shooter, level);
 
     this.broadGlaiveItem = new ItemStack(ModItems.BROAD_GLAIVE);

@@ -3,10 +3,10 @@ package com.ridopipolop.createadditionalweapons.content.weapons.broad_glaive;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import com.ridopipolop.createadditionalweapons.CreateAdditionalWeapons;
 import com.ridopipolop.createadditionalweapons.client.CreateAdditionalWeaponsClient;
 import com.ridopipolop.createadditionalweapons.entity.ThrownBroadGlaive;
 
-import assets.createadditionalweapons.models.item.broad_glaive.ThrownBroadGlaiveModel;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
@@ -17,7 +17,7 @@ import net.minecraft.util.Mth;
 
 public class ThrownBroadGlaiveRenderer extends EntityRenderer<ThrownBroadGlaive> {
   public static final ResourceLocation BROAD_GLAIVE_LOCATION = new ResourceLocation(
-      "textures/entity/broad_glaive_entity.png");
+      CreateAdditionalWeapons.MOD_ID, "textures/entity/broad_glaive_entity.png");
   private final ThrownBroadGlaiveModel model;
 
   public ThrownBroadGlaiveRenderer(EntityRendererProvider.Context context) {
