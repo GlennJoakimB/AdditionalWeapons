@@ -22,7 +22,7 @@ public class ModItems {
   
   public static final ItemEntry<BroadGlaiveItem> BROAD_GLAIVE = REGISTRATE
     .item("broad_glaive", BroadGlaiveItem::new)
-    .properties(p -> p.stacksTo(1))
+    .properties(p -> p.stacksTo(1).durability(500))
     .transform(CreateRegistrate.customRenderedItem(() -> BroadGlaiveItemRenderer::new))
     .model(AssetLookup.itemModelWithPartials())
     .register();
