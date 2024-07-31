@@ -16,8 +16,6 @@ import net.minecraft.resources.ResourceLocation;
 
 // Made with Blockbench 4.10.4
 public class ThrownBroadGlaiveModel extends Model {
-  // private final ModelPart Cog;
-
   public static final ResourceLocation TEXTURE = new ResourceLocation(
       CreateAdditionalWeapons.MOD_ID, "textures/entity/broad_glaive_entity.png");
   private final ModelPart root;
@@ -25,7 +23,6 @@ public class ThrownBroadGlaiveModel extends Model {
   public ThrownBroadGlaiveModel(ModelPart root) {
     super(RenderType::entitySolid);
     this.root = root;
-    // this.Cog = root.getChild("Cog");
   }
 
   public static LayerDefinition getTexturedModelData() {
@@ -68,11 +65,4 @@ public class ThrownBroadGlaiveModel extends Model {
       float green, float blue, float alpha) {
     this.root.render(poseStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
   }
-
-  // @Override
-  // public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount,
-  // float ageInTicks, float netHeadYaw,
-  // float headPitch) {
-  // // TODO: Add animation of gear?
-  // }
 }
